@@ -1,29 +1,40 @@
-# JupyterLite Demo
+## Welcome to DataDruid Labs
+DataDruid Labs is an innovative online platform designed to provide an enabling environment for users to carry out programming lessons and build their skills in data analysis and science. Our lab is accessible directly in your web browser, making it easy to learn and practice programming concepts anywhere, anytime, even on your mobile phone!
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/demo)
+## Supported Environments
+We currently support the following programming environments:
+1. Python (Pyodide)
+2. JavaScript (Web Worker)
+3. p5.js
 
-JupyterLite deployed as a static site to GitHub Pages, for demo purposes.
+## Coming Soon!
+We are currently working on providing support for SQL and R programming languages, which will be available in our environments soon. Stay tuned for updates!
 
-## ✨ Try it in your browser ✨
+## Important Notes
+Please note that our lab environment may lack some extensive libraries, and you may experience a delay when first importing a library. We apologize for any inconvenience this may cause.
+Our lab is designed for learning and training purposes, and we provide small data sets for practice and exercises. However, for heavy analysis and large-scale projects, we recommend using your local computer for optimal performance.
 
-➡️ **https://jupyterlite.github.io/demo**
+## Getting Started
+1. Access the lab by visiting our website and clicking on the "Launch Lab" button.
+2. Choose a programming environment (Python, JavaScript, or p5.js) and start exploring our interactive notebooks and exercises.
+3. Use our tutorials and guides to learn new skills and practice your coding abilities.
 
-![github-pages](https://user-images.githubusercontent.com/591645/120649478-18258400-c47d-11eb-80e5-185e52ff2702.gif)
+## Features
+1. Interactive notebooks for hands-on learning
+2. Medium sized data sets for practice and exercises
+3. Accessible on desktop, laptop, tablet, or mobile phone
+4. Compatible with popular programming languages (Python, JavaScript, and p5.js)
 
-## Requirements
+## Tips and Best Practices
+1. Start with our beginner-friendly tutorials and gradually move on to more advanced topics.
+2. Practice regularly to reinforce your learning and build your skills.
+3. Join our community forums to connect with other users, ask questions, and share knowledge.
+4. Digital Innovations for the Future of Analysis
 
-JupyterLite is being tested against modern web browsers:
+DataDruid Labs is part of a larger initiative to build programming skills for the future of data analysis and science. Our platform is designed to provide an inclusive and accessible environment for users of all levels to learn, grow, and succeed.
 
-- Firefox 90+
-- Chromium 89+
+## Acknowledgments
+We would like to thank our team of developers, instructors, and contributors who have worked tirelessly to create and maintain this platform. We are grateful for your support and feedback, which help us improve and expand our services.
 
-## Deploy your JupyterLite website on GitHub Pages
-
-Check out the guide on the JupyterLite documentation: https://jupyterlite.readthedocs.io/en/latest/quickstart/deploy.html
-
-## Further Information and Updates
-
-For more info, keep an eye on the JupyterLite documentation:
-
-- How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
-- Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html
+## Contact Us
+If you have any questions, suggestions, or feedback, please don't hesitate to reach out to us using this [[form](https://docs.google.com/forms/d/e/1FAIpQLSfJFRXtw08fOwFRVmQjmbxnFxl1ZASpFwBw9wNLlpJU0bbTlA/viewform)]. We are always here to help and support your learning journey.
