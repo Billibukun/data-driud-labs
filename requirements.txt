@@ -32,7 +32,7 @@ jupyterlab-night
 # JupyterLab: Miami nights theme (optional)
 jupyterlab_miami_nights
 # Add download capabilities
-# jupyterlab-download-notebook==2.2.0
+jupyterlab-download-notebook==2.2.0
 
 # Python: ipywidget library for Jupyter notebooks (optional)
 ipywidgets>=8.1.1,<9
@@ -48,3 +48,7 @@ ipyleaflet
 # Python: plotting libraries (optional)
 plotly>=5,<6
 bqplot
+pandas
+numpy
+geopandas
+7zip
