@@ -51,4 +51,3 @@ bqplot
 pandas
 numpy
 geopandas
-7zip
