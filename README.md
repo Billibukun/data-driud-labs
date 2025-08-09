@@ -33,6 +33,46 @@ Our lab is designed for learning and training purposes, and we provide small dat
 
 DataDruid Labs is part of a larger initiative to build programming skills for the future of data analysis and science. Our platform is designed to provide an inclusive and accessible environment for users of all levels to learn, grow, and succeed.
 
+## UI Customization and AI Provider Setup
+
+### UI Customizations
+DataDruid Labs runs on JupyterLite, allowing you to tailor the workspace to your needs:
+
+* **Theme & Font Size** – Use the settings (gear) icon in the interface to switch between light and dark themes or adjust the editor font size.
+* **Extensions** – Enable or disable JupyterLab extensions by editing the `repl/jupyter-lite.json` file and updating the `disabledExtensions` list.
+
+### Environment Variables
+Set the following environment variables before launching the lab to connect to different AI providers:
+
+| Provider | Required Variables |
+| --- | --- |
+| OpenAI | `OPENAI_API_KEY` |
+| Anthropic | `ANTHROPIC_API_KEY` |
+| Google Gemini | `GOOGLE_API_KEY` |
+| Azure OpenAI | `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT` |
+| Hugging Face Hub | `HUGGINGFACEHUB_API_TOKEN` |
+
+### Example: Listing and Selecting Models with `ai_agent`
+```python
+from ai_agent import ModelRegistry
+
+registry = ModelRegistry()
+
+# List available models for each provider
+for provider, models in registry.list_models().items():
+    print(provider, models)
+
+# Select a model and generate a response
+model = registry.get("openai:gpt-4o-mini")
+print(model.chat("Hello DataDruid!"))
+```
+
+### Troubleshooting API Key Issues
+* Verify that the environment variable is exported without quotes (e.g., `export OPENAI_API_KEY=sk-...`).
+* Some providers require multiple variables (such as both a key and endpoint for Azure); confirm all are set.
+* 401 or 403 errors often indicate an expired or incorrect key—regenerate it from the provider dashboard.
+* Ensure your network or firewall allows requests to the provider's API endpoint.
+
 ## Acknowledgments
 We would like to thank our team of developers, instructors, and contributors who have worked tirelessly to create and maintain this platform. We are grateful for your support and feedback, which help us improve and expand our services.
 
