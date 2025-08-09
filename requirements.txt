@@ -51,3 +51,10 @@ bqplot
 pandas
 numpy
 geopandas
+
+# AI provider clients
+openai
+google-generativeai
+anthropic
+groq
+python-dotenv
