@@ -1,11 +1,18 @@
 {
-    "jupyter-lite-schema-version": 0,
-    "jupyter-config-data": {
-      "disabledExtensions": [
-        "@jupyterlab/drawio-extension",
-        "jupyterlab-kernel-spy",
-        "jupyterlab-tour"
-      ]
-    }
+  "jupyter-lite-schema-version": 0,
+  "jupyter-config-data": {
+    // Default theme can be "JupyterLab Light" or "JupyterLab Dark"
+    "theme": "JupyterLab Light",
+    // Toggle kernels by setting entries to true/false
+    "kernelOptions": {
+      "python": true,
+      "r": true
+    },
+    "disabledExtensions": [
+      "@jupyterlab/drawio-extension",
+      "jupyterlab-kernel-spy",
+      "jupyterlab-tour"
+    ]
+    // Additional extensions or localization settings may be added here
   }
-  
+}

@@ -1,40 +1,39 @@
-## Welcome to DataDruid Labs
-DataDruid Labs is an innovative online platform designed to provide an enabling environment for users to carry out programming lessons and build their skills in data analysis and science. Our lab is accessible directly in your web browser, making it easy to learn and practice programming concepts anywhere, anytime, even on your mobile phone!
+# DataDruid Labs
 
-## Supported Environments
-We currently support the following programming environments:
-1. Python (Pyodide)
-2. JavaScript (Web Worker)
-3. p5.js
+A browser-based learning environment featuring Python and R kernels with optional AI model integration.
 
-## Coming Soon!
-We are currently working on providing support for SQL and R programming languages, which will be available in our environments soon. Stay tuned for updates!
+## Customizing the Interface
+Default theme and kernels are configured in `repl/jupyter-lite.json`. Change the `theme` value or toggle entries in
+`kernelOptions` to enable or disable specific kernels.
 
-## Important Notes
-Please note that our lab environment may lack some extensive libraries, and you may experience a delay when first importing a library. We apologize for any inconvenience this may cause.
-Our lab is designed for learning and training purposes, and we provide small data sets for practice and exercises. However, for heavy analysis and large-scale projects, we recommend using your local computer for optimal performance.
+## AI Agent
+Set the following environment variables to enable model discovery:
 
-## Getting Started
-1. Access the lab by visiting our website and clicking on the "Launch Lab" button.
-2. Choose a programming environment (Python, JavaScript, or p5.js) and start exploring our interactive notebooks and exercises.
-3. Use our tutorials and guides to learn new skills and practice your coding abilities.
+- `OPENAI_API_KEY`
+- `GOOGLE_API_KEY`
+- `ANTHROPIC_API_KEY`
+- `GROQ_API_KEY`
 
-## Features
-1. Interactive notebooks for hands-on learning
-2. Medium sized data sets for practice and exercises
-3. Accessible on desktop, laptop, tablet, or mobile phone
-4. Compatible with popular programming languages (Python, JavaScript, and p5.js)
+Example usage:
 
-## Tips and Best Practices
-1. Start with our beginner-friendly tutorials and gradually move on to more advanced topics.
-2. Practice regularly to reinforce your learning and build your skills.
-3. Join our community forums to connect with other users, ask questions, and share knowledge.
-4. Digital Innovations for the Future of Analysis
+```python
+from ai_agent import list_models, select_model
+models = list_models("openai")
+model = select_model("openai", models[0])
+```
 
-DataDruid Labs is part of a larger initiative to build programming skills for the future of data analysis and science. Our platform is designed to provide an inclusive and accessible environment for users of all levels to learn, grow, and succeed.
+Common issues:
+- Missing API keys will raise a `RuntimeError`.
+- Network errors are reported during model listing.
 
-## Acknowledgments
-We would like to thank our team of developers, instructors, and contributors who have worked tirelessly to create and maintain this platform. We are grateful for your support and feedback, which help us improve and expand our services.
+## Sample Data and Lessons
+Datasets reside under `content/data/` and guided notebooks live in `content/lessons/`.
 
-## Contact Us
-If you have any questions, suggestions, or feedback, please don't hesitate to reach out to us using this [[form](https://docs.google.com/forms/d/e/1FAIpQLSfJFRXtw08fOwFRVmQjmbxnFxl1ZASpFwBw9wNLlpJU0bbTlA/viewform)]. We are always here to help and support your learning journey.
+- `content/lessons/python_basics.ipynb` – load data and compute statistics.
+- `content/lessons/r_basics.ipynb` – simple R examples.
+
+## Notebook Demonstration
+`content/python.ipynb` provides a widget-based workflow to select a provider and model and dispatch a prompt.
+
+## Requirements
+Dependencies are listed in `requirements.txt` and include optional clients for major AI providers.
