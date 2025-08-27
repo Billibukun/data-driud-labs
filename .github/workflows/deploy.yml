@@ -8,6 +8,13 @@ on:
     branches:
       - '*'
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+  pull_request:
+    branches:
+      - '*'
+
 jobs:
   build:
     runs-on: ubuntu-latest
