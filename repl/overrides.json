@@ -1,0 +1,17 @@
+{
+  "@jupyterlab/apputils-extension:settings": {
+    "theme": "JupyterLab Light"
+  },
+  "@jupyterlab/notebook-extension:tracker": {
+    "codeCellConfig": {
+      "lineNumbers": true,
+      "fontFamily": "Fira Code, monospace",
+      "fontSize": 14
+    }
+  },
+  "@jupyterlab/docmanager-extension:plugin": {
+    "defaultViewers": {
+      "markdown": "Markdown Preview"
+    }
+  }
+}
